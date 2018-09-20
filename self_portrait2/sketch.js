@@ -14,7 +14,7 @@ function setup() {
 
     var eyecolor = 'yellow';
     var mouthcolor = 'green';
-    var nosecolor = 'green'; 
+    var nosecolor = 'black'; 
      
     // face
 	
