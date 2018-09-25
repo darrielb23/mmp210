@@ -13,8 +13,12 @@ function setup() {
     var crownTriangleclr = 'black';
 
 
-    var crownLineX = (68, 9)
-    var crownLineY = (124, 13)
+    var crownLineX = (68)
+    var crownLineY = (9)
+
+    var crownLineX2 = 124;
+    var crownLineY2 = 13;
+
 
 
 //first triangle
@@ -151,7 +155,8 @@ var facePosY = 100;
 
      
      stroke(crownBaseclr);
-     line (68, 9, 124, 13);
+     line (crownLineX, crownLineY, crownLineX2, crownLineY2);
+
 
 
 
@@ -198,6 +203,7 @@ var facePosY = 100;
     // nose
 
      fill(nosecolor);
+
      triangle(noseTriX1, noseTriY1, noseTriX2, noseTriY2, noseTriX3, noseTriY3);	
 
 }
