@@ -16,8 +16,36 @@ function setup() {
     var mouthcolor = 'green';
     var nosecolor = 'black'; 
      
+
+
+    //crown
+
+     
+
+
+
+     stroke('white');
+     line(70, 9, 124, 13);
+
+
+
+     noFill();
+     stroke('black');
+
+     triangle(74, 14, 77, 5, 80, 14);
+
+     triangle(88, 14, 92, 5, 98, 14);
+
+     triangle(108, 14, 116, 5, 120, 14);
+
+
+
+
+
+
+
     // face
-	
+	noStroke ();
 	fill(skincolor);
 	ellipse(100, 100, 150); 
 
