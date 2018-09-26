@@ -154,7 +154,7 @@ var facePosY = 100;
 
     //crown
 
-     
+     strokeWeight(3); 
      stroke(crownBaseclr);
      line (crownLineX, crownLineY, crownLineX2, crownLineY2);
 
@@ -234,6 +234,7 @@ var facePosY = 100;
 
 
     //teeth
+    strokeWeight(1.5);
     stroke( 'white');
     line (85, 129, 115, 129); 
 
