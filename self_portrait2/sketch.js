@@ -74,7 +74,7 @@ var facecolor = 'darkorange';
 var facewidth = 150;
 
 
-var facePosX = 100 ;
+var facePosX = 105 ;
 var facePosY = 100;
 
 
@@ -90,20 +90,20 @@ var facePosY = 100;
 
 //eye
     
-    var eyewidth = 30;
+    var eyewidth = 26;
     var eyecolor = 'yellow';
 
     // left eye
-    var leftEyeX = 55;
-    var leftEyeY = 30;
+    var leftEyeX = 58;
+    var leftEyeY = 35;
 
 
 
 
     
     //right eye
-    var rightEyeX = 135;
-    var rightEyeY = 55;
+    var rightEyeX = 139;
+    var rightEyeY = 35;
     
 
 
@@ -126,8 +126,8 @@ var facePosY = 100;
 
 //mouth
 
-
-    var mouthcolor = 'green';
+//var mouthline
+    var mouthColor = 'black';
 
     var mouthRectX = 75 ;
     var mouthRectY = 125;
@@ -136,6 +136,7 @@ var facePosY = 100;
     var mouthRadius = 10;
 
    
+    
 
     
 
@@ -181,27 +182,68 @@ var facePosY = 100;
 
 
     // face
+
+
 	noStroke ();
 	fill(facecolor); 
     ellipse(facePosX, facePosY, facewidth );
 
+
+
+
+
     // eyes
+
+
+    
 
 	fill(eyecolor);
     ellipse(rightEyeX ,rightEyeY, eyewidth); // right eye
+
+
 
     fill(eyecolor)
     ellipse(leftEyeX, leftEyeY, eyewidth); // left eye
 
 
+    //Pupil
+
+    fill("black")
+    ellipse(60, 40, 10); // left pupil
+
+
+
+    fill("black")
+    ellipse(135, 40, 10); // right pupil
+
+
+
+
+
+
     // mouth
      
-    fill(mouthcolor);
+    
+
+
+
+    noStroke();
+    fill(mouthColor);
 	rect(mouthRectX, mouthRectY, mouthRectWidth, mouthHeight, mouthRadius);  
 
 
-    // nose
 
+    //teeth
+    stroke( 'white');
+    line (85, 129, 115, 129); 
+
+
+
+
+
+
+    // nose
+     noStroke();
      fill(nosecolor);
 
      triangle(noseTriX1, noseTriY1, noseTriX2, noseTriY2, noseTriX3, noseTriY3);	
