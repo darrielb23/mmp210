@@ -67,9 +67,16 @@ function draw() {
     //face
 
 
-   var facecolor = 'orange';
+    var r = 255; // red;
+    var g = 145; // green
+    var b = mouseX; // blue
+
+
+
 
     var facewidth = 150;
+
+
     var facePosX = 105;
     var facePosY = 100;
 
@@ -121,7 +128,7 @@ function draw() {
 
     //mouth
 
-  
+    //var mouthline
     var mouthColor = 'black';
 
     var mouthRectX = 75;
@@ -146,31 +153,10 @@ function draw() {
 
 
 
-    //crown
-
-    strokeWeight(crownStroke);
-    stroke(crownBaseclr);
-    line(crownLineX , crownLineY , crownLineX2, crownLineY2 );
-
-
-    noFill();
-    stroke(crownTriangleclr);
-
-
-    //first
-    triangle(crownTriX1 , crownTriY1 , crownTriX2 , crownTriY2 , crownTriX3 , crownTriY3);
-
-    //second
-    triangle(crwnTriX1 , crwnTriY1 , crwnTriX2 , crwnTriY2, crwnTriX3 , crwnTriY3 );
-
-    //third
-    triangle(ccrwnTriX1 , ccrwnTriY1, ccrwnTriX2 , ccrwnTriY2, ccrwnTriX3 , ccrwnTriY3 );
-
-
     // face
 
     noStroke();
-    fill(facecolor);
+    fill(r, g, b);
     ellipse(facePosX, facePosY, facewidth);
 
 
@@ -233,6 +219,32 @@ function draw() {
     fill(nosecolor);
 
     triangle(noseTriX1, noseTriY1, noseTriX2, noseTriY2, noseTriX3, noseTriY3);
+
+
+    //var s = width - mouseX; // reverses the direction// decided not to use it
+
+    var beCrown = map(mouseX, 0, width, 0, 550, true); // move mouth with mouse x
+
+    //crown
+
+    strokeWeight(crownStroke);
+    stroke(crownBaseclr);
+    line(crownLineX, crownLineY + beCrown, crownLineX2, crownLineY2 + beCrown);
+
+
+    noFill();
+    stroke(crownTriangleclr);
+
+
+    //first
+    triangle(crownTriX1 + beCrown, crownTriY1, crownTriX2 + beCrown, crownTriY2, crownTriX3 + beCrown, crownTriY3);
+
+    //second
+    triangle(crwnTriX1 + beCrown, crwnTriY1, crwnTriX2 + beCrown, crwnTriY2, crwnTriX3 + beCrown, crwnTriY3);
+
+    //third
+    triangle(ccrwnTriX1 + beCrown, ccrwnTriY1, ccrwnTriX2 + beCrown, ccrwnTriY2, ccrwnTriX3 + beCrown, ccrwnTriY3);
+
 
 
 
