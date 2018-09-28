@@ -1,7 +1,7 @@
 // self portrait 
 
 function setup() {
-    createCanvas(900, 300);
+    createCanvas(400, 200);
 }
 
 function draw() {
