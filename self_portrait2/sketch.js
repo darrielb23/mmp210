@@ -1,7 +1,7 @@
 // self portrait 
 
 function setup() {
-    createCanvas(600, 250);
+    createCanvas(900, 300);
 }
 
 function draw() {
@@ -26,42 +26,42 @@ function draw() {
 
     //first triangle
 
-    var crownTriX1 = (74)
-    var crownTriY1 = (14)
+    var crownTriX1 = 74;
+    var crownTriY1 = 14;
 
-    var crownTriX2 = (77)
-    var crownTriY2 = (5)
+    var crownTriX2 = 77;
+    var crownTriY2 = 5;
 
-    var crownTriX3 = (80)
-    var crownTriY3 = (14)
+    var crownTriX3 = 80;
+    var crownTriY3 = 14;
 
 
 
 
     //second triangle
 
-    var crwnTriX1 = (88)
-    var crwnTriY1 = (14)
+    var crwnTriX1 = 88;
+    var crwnTriY1 = 14;
 
-    var crwnTriX2 = (92)
-    var crwnTriY2 = (5)
+    var crwnTriX2 = 92;
+    var crwnTriY2 = 5;
 
-    var crwnTriX3 = (98)
-    var crwnTriY3 = (14)
+    var crwnTriX3 = 98;
+    var crwnTriY3 = 14;
 
 
 
 
     //third triangle
 
-    var ccrwnTriX1 = (108)
-    var ccrwnTriY1 = (14)
+    var ccrwnTriX1 = 108;
+    var ccrwnTriY1 = 14;
 
-    var ccrwnTriX2 = (116)
-    var ccrwnTriY2 = (5)
+    var ccrwnTriX2 = 116;
+    var ccrwnTriY2 = 5;
 
-    var ccrwnTriX3 = (120)
-    var ccrwnTriY3 = (14)
+    var ccrwnTriX3 = 120;
+    var ccrwnTriY3 = 14;
 
 
     //face
@@ -216,10 +216,10 @@ function draw() {
 
     triangle(noseTriX1, noseTriY1, noseTriX2, noseTriY2, noseTriX3, noseTriY3);
 
-     var s = width - mouseX; // reverses the direction
 
+var s = width - mouseX; // reverses the direction
 
-var beCrown = map(mouseX, 0, s, 0, 300, true); // move mouth with mouse x
+var beCrown = map(mouseX, 0, s, 0, 550, true); // move mouth with mouse x
 
     //crown
 
