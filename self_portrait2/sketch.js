@@ -66,7 +66,11 @@ function draw() {
 
     //face
 
-    var facecolor = 'darkorange';
+
+    var r = 255; // red;
+	var g = 145; // green
+	var b = mouseX; // blue
+	
 
 
 
@@ -152,7 +156,7 @@ function draw() {
     // face
 
     noStroke();
-    fill(facecolor);
+    fill(r,g,b);
     ellipse(facePosX, facePosY, facewidth);
 
 
@@ -217,9 +221,9 @@ function draw() {
     triangle(noseTriX1, noseTriY1, noseTriX2, noseTriY2, noseTriX3, noseTriY3);
 
 
-var s = width - mouseX; // reverses the direction
+//var s = width - mouseX; // reverses the direction// decided not to use it
 
-var beCrown = map(mouseX, 0, s, 0, 550, true); // move mouth with mouse x
+var beCrown = map(mouseX, 0, width, 0, 550, true); // move mouth with mouse x
 
     //crown
 
