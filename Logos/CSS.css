@@ -1,0 +1,38 @@
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  background-color: darkgreen;
+  color: orangered;
+    text-align: center;
+   font-size: 20px;
+}
+
+#container {
+  padding: 50px 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+canvas {
+    
+}
+
+.link {
+  list-style: none;
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+.link a {
+  color: whitesmoke;
+}
+
+a {
+  color: red;
+  transition: color 500ms
+}
+
+a:hover {
+  color: hotpink;
+}
