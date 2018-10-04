@@ -25,12 +25,13 @@ function draw() {
     image(smoke, 0, 0, width, height );
     tint(200, 200, 100);
     fill("black")
-    rect(10, 150, 550, 50)
+    rect(120, 5, 402, 25)
+    rect(250, 280, 460, 25)
     fill("pink");
 //    textAlign(CENTER, CENTER);
     textSize(25);
     textFont("Comic Sans MC")
-    text("YEAH BRO, YOU ALREADY KNOW WE OUTCHEA LIVING THE FAST LIFE !!", 200, height/2);
-    text("example", 300,300)
+    text("YEAH BRO, YOU ALREADY KNOW", 120, 25);
+    text("WE OUTCHEA LIVING THE FAST LIFE !!", 250,300);
 
 }
