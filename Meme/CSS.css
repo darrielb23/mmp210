@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: lightpink;
-  color: orangered;
+  color: green;
     text-align: center;
    font-size: 20px;
 }
@@ -25,13 +25,10 @@ canvas {
 }
 
 .link a {
-  color: whitesmoke;
+  color:  black;
 }
 
-a {
-  color: red;
-  transition: color 500ms;
-}
+
 
 a:hover {
   color: green;
