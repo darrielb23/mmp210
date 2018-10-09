@@ -22,13 +22,68 @@ function setup() {
 function draw() {
     background(0);
 
-    image(smoke, 0, 0, width, height );
-    tint(200, 200, 100);
-    fill("black")
-    rect(120, 5, 402, 25)
-    rect(250, 280, 460, 25)
-    fill("pink");
-//    textAlign(CENTER, CENTER);
+
+
+
+
+
+//meme image 
+
+    var imageX = 0;
+    var imageY = 0;
+    var imageTint1 = 200;
+    var imageTint2 = 200;
+    var imageTint3 = 100;
+    var imageFill = 'black';
+
+
+
+// background for meme
+
+    var bgX = 120;
+    var bgY = 5;
+    var bgWidth = 402;
+    var bgHeight = 25;
+    
+
+
+
+// background for meme two
+
+    var bgX2 = 250;
+    var bgY2 = 280;
+    var bgWidth2 = 460;
+    var bgHeight2 = 25;
+
+//text
+
+var textfill = 'pink';
+
+
+
+ //meme image 
+
+    image(smoke, imageX, imageY, width, height );
+    tint(imageTint1, imageTint2, imageTint3);
+    fill(imageFill);
+    
+
+
+// background for meme one
+
+    rect(bgX, bgY, bgWidth, bgHeight)
+
+
+
+// background for meme two
+
+    rect(bgX2, bgY2, bgWidth2, bgHeight2)
+
+
+// 
+    fill(textfill);
+
+
     textSize(25);
     textFont("Comic Sans MC")
     text("YEAH BRO, YOU ALREADY KNOW", 120, 25);
