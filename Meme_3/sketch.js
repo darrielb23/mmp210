@@ -28,7 +28,13 @@ function setup() {
 }
 
 function draw() {
-    background(0);
+
+    if (mouseIsPressed) {
+        background('lightgreen');
+    } else {
+        background('lightblue');
+    }
+
 
 
     // background rect for mousePress1
@@ -75,30 +81,13 @@ function draw() {
             turtleSpeed *= -1;
         }
         image(sq6, 0, height / 2, width / 2, height / 2); // bottom left
-         
-         
-        fill(textFill2); 
+
+        fill(textFill2);
         textSize(18);
         text("WHEN YOU GOTTA COMPETE FOR THE LAST SPOT ON THE TEAM", 30, 280);
 
 
-        //memeImage mouseX moves left
 
-    } else {
-        image(sq7, 0, 0, width / 2, height / 2); // top left 
-        image(smoke, width / 2, height / 2, width / 2, 0); // bottom right 
-
-        textSize(28);
-        text("WELCOME TO FAST LIFE ACADEMY", 520, 100);
-        text("SCHOOL FOR THE FAST LIFE", 100, 400);
-    }
-
-
-
-    fill(textFill);
-
-    textSize(26);
-    textFont("Impact, Charcoal, sans-serif");
 
 
     //meme image mousePress
@@ -112,12 +101,57 @@ function draw() {
 
         rect(bgX2, bgY2, bgWidth2, bgHeight2) // background for words2
 
-
-        fill(textFill2);
+         textSize(26); 
+        fill(textFill);
         text("IF YOU WANA GO FASSTTT", 133, 63);
         text("GO SUPERRR FASSSTTTT", 172, 413);
 
-    }       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //memeImage mouseX moves left
+
+
+    } else {
+
+        textSize(40);
+        text("SCHOOL FOR THE FAST LIFE", 500, 140);
+        image(smoke, width / 2, height / 2, width / 2, 0); // bottom right
+        translate(width / 2, 0);
+        var r = frameCount / 100 * PI;
+        rotate(r);
+
+
+        translate(width / 2, 0);
+        var r = frameCount / 100 * PI;
+        rotate(r);
+        textSize(60);
+        image(sq7, 0, 0, width / 2, height / 2); // rotating image 
+        fill(textFill2);
+        text("OOO WEEE", 100, 300); // rotating text
+
+    }
+
+
+        fill(textFill);
+
+        textSize(26);
+        textFont("Impact, Charcoal, sans-serif");
+
 
 
 }
