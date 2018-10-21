@@ -13,7 +13,7 @@ var sq6;
 var sq7;
 var turtleY = 0;
 var turtleSpeed = 45;
-var textType = "Impact, Charcoal, sans-serif" ;
+var textType = "Impact, Charcoal, sans-serif";
 var ts1 = 15;
 var ts2 = 18;
 var ts3 = 26;
@@ -36,6 +36,10 @@ function setup() {
 }
 
 function draw() {
+
+
+
+    //memeImage mousePress right
 
     if (mouseIsPressed) {
         background('lightgreen');
@@ -98,9 +102,9 @@ function draw() {
 
 
 
-        //meme image mousePress
+        //memeImage mousePress right
 
-    if (mouseIsPressed) {
+        if (mouseIsPressed) {
 
             image(sq, 130, 0);
 
@@ -109,15 +113,14 @@ function draw() {
 
             rect(bgX2, bgY2, bgWidth2, bgHeight2) // background for words2
 
-            textSize(ts3); 
+            textSize(ts3);
             fill(textFill);
             text("IF YOU WANA GO FASSTTT", 133, 63);
             text("GO SUPERRR FASSSTTTT", 172, 413);
-             }
-
         }
-        //memeImage mouseX moves left
- 
+
+    }
+    //memeImage mouseX moves left
     else {
 
         textSize(ts4);
@@ -139,10 +142,10 @@ function draw() {
     }
 
 
-        fill(textFill);
+    fill(textFill);
 
-        textSize(ts3);
-        textFont(textType);
+    textSize(ts3);
+    textFont(textType);
 
 
 }
