@@ -124,6 +124,7 @@ function draw() {
     else {
 
         textSize(ts4);
+        fill(textFill2);
         text("SCHOOL FOR THE FAST LIFE", 500, 140);
         image(smoke, width / 2, height / 2, width / 2, 0); // bottom right
         translate(width / 2, 0);
