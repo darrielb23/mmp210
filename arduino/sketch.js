@@ -1,9 +1,8 @@
-
 /*
     Arduino + p5 example
 */
 var serial;
-var portName = "/dev/cu.usbmodem179";
+var portName = "COM3";
 var sensorValue;
 
 function setup() {
@@ -46,15 +45,55 @@ function serialEvent() {
 
 function draw() {
     var c = map(sensorValue, 0, 1023, 0, 200);
-    
+    var b = map(sensorValue, 0, 1023, 100, 240);
+
     // sky
-    background(c, c, c + 55);
+    background(c, b, c + 25);
     
     var y = map(sensorValue, 0, 1023, height, 0);
-    
+    //var x = map(sensorValue, 0 1023, width, 0);
+
+
     // sun
-    noStroke();
-    fill('gold');
-    ellipse(320, y, 50);
+    stroke("white");
+    fill('blue');
+
+
+//dark moon1
+    ellipse(20, y, 20);
+
+//dark moon2
+
+    ellipse(420, y -30 , 50);
     
+  //dark moon3
+
+    ellipse(300, y - 10, 20);
+
+//dark moon4
+
+    ellipse(115, y + 10, 50);
+
+//dark moon5
+
+    ellipse(87, y - 50, 20);
+
+  //dark moon1
+    ellipse(200, y + 20, 20);
+
+//dark moon2
+
+    ellipse(40, y - 10, 50);
+    
+  //dark moon3
+
+    ellipse(340, y - 19, 20);
+
+//dark moon4
+
+    ellipse(15, y + 20, 10);
+
+//dark moon5
+
+    ellipse(0, y - 50, 30);  
 }
