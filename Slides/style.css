@@ -1,0 +1,32 @@
+body {
+  font-family: Acme;
+  margin: 0;
+  padding: 0;
+  background-color: gold;
+  color: red;
+}
+
+#container {
+  /*padding: 50px 0;*/
+  width: 500px;
+  margin: 0 auto;
+}
+
+.link {
+  list-style: none;
+  color: red;
+  font-size: 2em;
+}
+
+.link a {
+  color: black;
+}
+
+a {
+  color: blue;
+  transition: color 500ms
+}
+
+a:hover {
+  color: white;
+}
