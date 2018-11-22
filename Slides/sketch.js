@@ -27,7 +27,7 @@ function draw() {
         text("Final Project Idea", width/2, height/2);
     } else if (slide == 1) {
         textSize(30);
-        text("Speacker sensor", 200, 100);
+        text("Speaker sensor", 200, 100);
         
         // fsr graphic
         rect(550, 400, 200, 100);
