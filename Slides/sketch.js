@@ -6,10 +6,11 @@
 var slide = 0;
 
 var pop1;
+var pop2;
 
 function preload() {
     pop1 = loadImage("popcornbk.png");
- 
+    pop2 = loadImage("slide101.jpg");
 }
 
 function setup() {
@@ -25,6 +26,7 @@ function draw() {
     
     if (slide == 0) {
         text("Final Project Idea", width/2, height/2);
+
     } else if (slide == 1) {
         textSize(30);
         text("Speaker sensor", 200, 100);
@@ -40,8 +42,15 @@ function draw() {
 
     } else if (slide == 2) {
         text("Theme: At The Movies", 200, 20);
-        image(pop1, 10, 5);
-//        image(pop2, 400, 100);
+        image(pop1, 0,0, width, height);
+
+    }
+
+
+
+ else if (slide == 3) {
+        text("How To Website Is Going To Work", 200, 20);
+        image(pop2, 0,0, width,height);
     }
 }
 
