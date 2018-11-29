@@ -49,7 +49,7 @@ function draw() {
 
 
  else if (slide == 3) {
-        text("How To Website Is Going To Work", 200, 20);
+//        text("How To Website Is Going To Work", 200, 20);
         image(pop2, 0,0, width,height);
     }
 }
