@@ -42,7 +42,7 @@ function draw() {
 
     } else if (slide == 2) {
         text("Theme: At The Movies", 200, 20);
-        image(pop1, 0,0, width, height);
+        image(pop1, 10, 5);
 
     }
 
